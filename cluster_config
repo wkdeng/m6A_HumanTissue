@@ -1,0 +1,72 @@
+__default__:
+   h_data: 6G
+   threads: 1
+   h_rt: 00-05:00:00
+kallisto_indexing:
+  h_data: 40G
+  threads: 20
+  h_rt: 00-05:00:00
+star_indexing:
+   h_data: 50G
+   threads: 20
+   h_rt: 00-05:00:00
+star_map:
+   h_data: 50G
+   threads: 20
+   h_rt: 00-05:00:00
+kallisto_quant:
+   h_data: 8G
+   threads: 20
+   h_rt: 00-05:00:00
+clam_prep:
+   h_data: 100G
+   threads: 1
+   h_rt: 00-10:00:00
+clam_em:
+   h_data: 120G
+   threads: 1
+   h_rt: 01-00:00:00
+clam_callpeak:
+   h_data: 120G
+   h_rt: 18:00:0
+   threads: 20
+clam_callpeak_mread:
+   h_data: 120G
+   h_rt: 18:00:0
+   threads: 20
+make_read_signal_bw:
+   h_data: 80G
+   threads: 1
+   h_rt: 00-05:00:00
+parse_peak:
+   h_data: 80G
+   threads: 1
+   h_rt: 00-20:00:00
+pile_reads_for_bw:
+   h_data: 100G
+   threads: 20
+   h_rt: 5-00:00:00
+merge_replicate_bw:
+   h_data: 30G
+   threads: 1
+   h_rt: 00-01:00:00
+normalize_bw:
+   h_data: 30G
+   threads: 1
+   h_rt: 00-05:00:00
+collapse_dup:
+   h_data: 50G
+   threads: 1
+   h_rt: 00-05:00:00
+clam_preprocess:
+   h_data: 100G
+   threads: 1
+   h_rt: 00-05:00:00
+clam_realign:
+   h_data: 100G
+   threads: 1
+   h_rt: 00-05:00:00
+clam_callpeak_mread:
+   h_data: 120G
+   h_rt: 18:00:0
+   threads: 20

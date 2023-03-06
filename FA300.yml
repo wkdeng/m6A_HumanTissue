@@ -1,0 +1,68 @@
+PROJECT_DIR: /home/dengw1/workspace/mouse_lowinput/FA300
+SCRIPTS_DIR: /home/dengw1/workspace/snakerun
+config_file: /home/dengw1/workspace/snakerun/mouse_lowinput/FA300.yml
+python2_path: /home/dengw1/workspace/softwares/anaconda2/bin/python
+default_python: /home/dengw1/workspace/softwares/anaconda3/bin/python
+# parse_addition: /home/dengw1/workspace/mouse_lowinput/FA233/parsed_peaks/input_peak.RPKM.csv
+parse_unique: False
+clam:
+  max_tags: 1
+
+genome: hg19
+table_name: knownGene
+
+t2g: /home/dengw1/workspace/genome/raw/hg19/t2g.txt
+ensg2gn: /home/dengw1/workspace/genome/raw/hg19/ensg_gn.txt
+con_suffix: -Inp
+ip_suffix: -IP
+use_multiple_peak: True
+regulator:
+  ['ENSG00000140718', 'ENSG00000091542', 'ENSG00000123200', 'ENSG00000145388',
+   'ENSG00000165819', 'ENSG00000106263', 'ENSG00000185728', 'ENSG00000149658',
+   'ENSG00000146457', 'ENSG00000047188', 'ENSG00000073792', 'ENSG00000159217',
+   'ENSG00000136231', 'ENSG00000122566', 'ENSG00000259956', 'ENSG00000162775',
+   'ENSG00000164944', 'ENSG00000198492', 'ENSG00000107581', 'ENSG00000083896']
+
+hg19:
+  star_idx: /home/dengw1/workspace/genome/star/hg19
+  gtf: /home/dengw1/workspace/genome/raw/hg19/hg19.gtf
+  kallisto_idx: /home/dengw1/workspace/genome/star/hg19/kallisto_hg19_all
+  chr_size: '/home/dengw1/workspace/genome/raw/hg19/chr_size.txt'
+  
+sample_type_dict:
+  U8C-Rep1-IP: ip
+  U8F-Rep1-IP: ip
+  # U8S-Rep1-IP: ip
+  U8C-Rep2-IP: ip
+  U8F-Rep2-IP: ip
+  # U8S-Rep2-IP: ip
+  U8C-Rep3-IP: ip
+  U8F-Rep3-IP: ip
+  U8C-Rep1-Inp: con
+  U8F-Rep1-Inp: con
+  # U8S-Rep1-Inp: con
+  U8C-Rep2-Inp: con
+  U8F-Rep2-Inp: con
+  # U8S-Rep2-Inp: con
+  U8C-Rep3-Inp: con
+  U8F-Rep3-Inp: con
+
+sample_comparison:
+  [
+  [U8C-Rep1-IP,U8C-Rep1-Inp],
+  [U8F-Rep1-IP,U8F-Rep1-Inp],
+  # [U8S-Rep1-IP,U8S-Rep1-Inp],
+  [U8C-Rep2-IP,U8C-Rep2-Inp],
+  [U8F-Rep2-IP,U8F-Rep2-Inp],
+  # [U8S-Rep2-IP,U8S-Rep2-Inp],
+  [U8C-Rep3-IP,U8C-Rep3-Inp],
+  [U8F-Rep3-IP,U8F-Rep3-Inp]
+  ]
+
+sample_merge:
+  [U8C, U8F]
+grp_merge:
+  [IP,Inp]
+rep_merge:
+  [Rep1,Rep2,Rep3]
+

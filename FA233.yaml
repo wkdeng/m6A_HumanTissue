@@ -1,0 +1,446 @@
+PROJECT_DIR: /home/dengw1/workspace/mouse_lowinput/FA233
+SCRIPTS_DIR: /home/dengw1/workspace/snakerun
+config_file: /mnt/isilon/xing_lab/dengw1/snakerun/mouse_lowinput/FA233.yaml
+clam:
+  max_tags: 1
+
+genome: hg19
+table_name: knownGene
+
+t2g: /home/dengw1/workspace/genome/raw/hg19/t2g.txt
+ensg2gn: /home/dengw1/workspace/genome/raw/hg19/ensg_gn.txt
+con_suffix: -Inp
+ip_suffix: -IP
+use_multiple_peak: True
+regulator:
+  ['ENSG00000140718', 'ENSG00000091542', 'ENSG00000123200', 'ENSG00000145388',
+   'ENSG00000165819', 'ENSG00000106263', 'ENSG00000185728', 'ENSG00000149658',
+   'ENSG00000146457', 'ENSG00000047188', 'ENSG00000073792', 'ENSG00000159217',
+   'ENSG00000136231', 'ENSG00000122566', 'ENSG00000259956', 'ENSG00000162775',
+   'ENSG00000164944', 'ENSG00000198492', 'ENSG00000107581', 'ENSG00000083896']
+
+hg19:
+  star_idx: /home/dengw1/workspace/genome/star/hg19
+  gtf: /home/dengw1/workspace/genome/raw/hg19/hg19.gtf
+  kallisto_idx: /home/dengw1/workspace/genome/star/hg19/kallisto_hg19_all
+  chr_size: '/home/dengw1/workspace/genome/raw/hg19/chr_size.txt'
+  
+sample_type_dict:
+  FBR-Rep1-IP: ip
+  FSC-Rep1-IP: ip
+  FHE-Rep1-IP: ip
+  FLU-Rep1-IP: ip
+  FLI-Rep1-IP: ip
+  FSP-Rep1-IP: ip
+  FAG-Rep1-IP: ip
+  FKI-Rep1-IP: ip
+  FBR-Rep1-Inp: con
+  FSC-Rep1-Inp: con
+  FHE-Rep1-Inp: con
+  FLU-Rep1-Inp: con
+  FLI-Rep1-Inp: con
+  FSP-Rep1-Inp: con
+  FAG-Rep1-Inp: con
+  FKI-Rep1-Inp: con
+  FTH-Rep1-IP: ip
+  FWH-Rep1-IP: ip
+  ABR-Rep1-IP: ip
+  ASC-Rep1-IP: ip
+  AHE-Rep1-IP: ip
+  ALU-Rep1-IP: ip
+  ALI-Rep1-IP: ip
+  ASP-Rep1-IP: ip
+  FTH-Rep1-Inp: con
+  FWH-Rep1-Inp: con
+  ABR-Rep1-Inp: con
+  ASC-Rep1-Inp: con
+  AHE-Rep1-Inp: con
+  ALU-Rep1-Inp: con
+  ALI-Rep1-Inp: con
+  ASP-Rep1-Inp: con
+  AAG-Rep1-IP: ip
+  AKI-Rep1-IP: ip
+  AEP-Rep1-IP: ip
+  ATE-Rep1-IP: ip
+  APR-Rep1-IP: ip
+  AUT-Rep1-IP: ip
+  AOV-Rep1-IP: ip
+  APL-Rep1-IP: ip
+  AAG-Rep1-Inp: con
+  AKI-Rep1-Inp: con
+  AEP-Rep1-Inp: con
+  ATE-Rep1-Inp: con
+  APR-Rep1-Inp: con
+  AUT-Rep1-Inp: con
+  AOV-Rep1-Inp: con
+  APL-Rep1-Inp: con
+  AAO-Rep1-IP: ip
+  ALN-Rep1-IP: ip
+  ALE-Rep1-IP: ip
+  AAD-Rep1-IP: ip
+  AAS-Rep1-IP: ip
+  ALV-Rep1-IP: ip
+  ARV-Rep1-IP: ip
+  APE-Rep1-IP: ip
+  AAO-Rep1-Inp: con
+  ALN-Rep1-Inp: con
+  ALE-Rep1-Inp: con
+  AAD-Rep1-Inp: con
+  AAS-Rep1-Inp: con
+  ALV-Rep1-Inp: con
+  ARV-Rep1-Inp: con
+  APE-Rep1-Inp: con
+  ACE-Rep1-IP: ip
+  ACN-Rep1-IP: ip
+  ACO-Rep1-IP: ip
+  ACC-Rep1-IP: ip
+  AHI-Rep1-IP: ip
+  ATA-Rep1-IP: ip
+  AMO-Rep1-IP: ip
+  ACE-Rep1-Inp: con
+  ACN-Rep1-Inp: con
+  ACO-Rep1-Inp: con
+  ACC-Rep1-Inp: con
+  AHI-Rep1-Inp: con
+  ATA-Rep1-Inp: con
+  AMO-Rep1-Inp: con
+  APO-Rep1-IP: ip
+  ATL-Rep1-IP: ip
+  ATR-Rep1-IP: ip
+  AES-Rep1-IP: ip
+  ASM-Rep1-IP: ip
+  AAT-Rep1-IP: ip
+  ABL-Rep1-IP: ip
+  APA-Rep1-IP: ip
+  APO-Rep1-Inp: con
+  ATL-Rep1-Inp: con
+  ATR-Rep1-Inp: con
+  AES-Rep1-Inp: con
+  ASM-Rep1-Inp: con
+  AAT-Rep1-Inp: con
+  ABL-Rep1-Inp: con
+  APA-Rep1-Inp: con
+  FBR-Rep2-IP: ip
+  FSC-Rep2-IP: ip
+  FHE-Rep2-IP: ip
+  FLU-Rep2-IP: ip
+  FLI-Rep2-IP: ip
+  FSP-Rep2-IP: ip
+  FAG-Rep2-IP: ip
+  FKI-Rep2-IP: ip
+  FBR-Rep2-Inp: con
+  FSC-Rep2-Inp: con
+  FHE-Rep2-Inp: con
+  FLU-Rep2-Inp: con
+  FLI-Rep2-Inp: con
+  FSP-Rep2-Inp: con
+  FAG-Rep2-Inp: con
+  FKI-Rep2-Inp: con
+  FTH-Rep2-IP: ip
+  FWH-Rep2-IP: ip
+  ABR-Rep2-IP: ip
+  ASC-Rep2-IP: ip
+  AHE-Rep2-IP: ip
+  ALU-Rep2-IP: ip
+  ALI-Rep2-IP: ip
+  ASP-Rep2-IP: ip
+  FTH-Rep2-Inp: con
+  FWH-Rep2-Inp: con
+  ABR-Rep2-Inp: con
+  ASC-Rep2-Inp: con
+  AHE-Rep2-Inp: con
+  ALU-Rep2-Inp: con
+  ALI-Rep2-Inp: con
+  ASP-Rep2-Inp: con
+  AAG-Rep2-IP: ip
+  AKI-Rep2-IP: ip
+  AEP-Rep2-IP: ip
+  ATE-Rep2-IP: ip
+  APR-Rep2-IP: ip
+  AUT-Rep2-IP: ip
+  AOV-Rep2-IP: ip
+  APL-Rep2-IP: ip
+  AAG-Rep2-Inp: con
+  AKI-Rep2-Inp: con
+  AEP-Rep2-Inp: con
+  ATE-Rep2-Inp: con
+  APR-Rep2-Inp: con
+  AUT-Rep2-Inp: con
+  AOV-Rep2-Inp: con
+  APL-Rep2-Inp: con
+  AAO-Rep2-IP: ip
+  ALN-Rep2-IP: ip
+  ALE-Rep2-IP: ip
+  AAD-Rep2-IP: ip
+  AAS-Rep2-IP: ip
+  ALV-Rep2-IP: ip
+  ARV-Rep2-IP: ip
+  APE-Rep2-IP: ip
+  AAO-Rep2-Inp: con
+  ALN-Rep2-Inp: con
+  ALE-Rep2-Inp: con
+  AAD-Rep2-Inp: con
+  AAS-Rep2-Inp: con
+  ALV-Rep2-Inp: con
+  ARV-Rep2-Inp: con
+  APE-Rep2-Inp: con
+  ACE-Rep2-IP: ip
+  ACN-Rep2-IP: ip
+  ACO-Rep2-IP: ip
+  ACC-Rep2-IP: ip
+  AHI-Rep2-IP: ip
+  ATA-Rep2-IP: ip
+  AMO-Rep2-IP: ip
+  AFL-Rep2-IP: ip
+  ACE-Rep2-Inp: con
+  ACN-Rep2-Inp: con
+  ACO-Rep2-Inp: con
+  ACC-Rep2-Inp: con
+  AHI-Rep2-Inp: con
+  ATA-Rep2-Inp: con
+  AMO-Rep2-Inp: con
+  AFL-Rep2-Inp: con
+  APO-Rep2-IP: ip
+  ATL-Rep2-IP: ip
+  ATR-Rep2-IP: ip
+  AES-Rep2-IP: ip
+  ASM-Rep2-IP: ip
+  AAT-Rep2-IP: ip
+  ABL-Rep2-IP: ip
+  APA-Rep2-IP: ip
+  APO-Rep2-Inp: con
+  ATL-Rep2-Inp: con
+  ATR-Rep2-Inp: con
+  AES-Rep2-Inp: con
+  ASM-Rep2-Inp: con
+  AAT-Rep2-Inp: con
+  ABL-Rep2-Inp: con
+  APA-Rep2-Inp: con
+  ASI-Rep1-IP: ip
+  ACL-Rep1-IP: ip
+  ACA-Rep1-IP: ip
+  ADU-Rep1-IP: ip
+  AIC-Rep1-IP: ip
+  AIM-Rep1-IP: ip
+  AJE-Rep1-IP: ip
+  AST-Rep1-IP: ip
+  ASI-Rep1-Inp: con
+  ACL-Rep1-Inp: con
+  ACA-Rep1-Inp: con
+  ADU-Rep1-Inp: con
+  AIC-Rep1-Inp: con
+  AIM-Rep1-Inp: con
+  AJE-Rep1-Inp: con
+  AST-Rep1-Inp: con
+  ACS-Rep1-IP: ip
+  ASO-Rep1-IP: ip
+  ATG-Rep1-IP: ip
+  AAC-Rep1-IP: ip
+  ASG-Rep1-IP: ip
+  AAP-Rep1-IP: ip
+  AMG-Rep1-IP: ip
+  ATN-Rep1-IP: ip
+  ACS-Rep1-Inp: con
+  ASO-Rep1-Inp: con
+  ATG-Rep1-Inp: con
+  AAC-Rep1-Inp: con
+  ASG-Rep1-Inp: con
+  AAP-Rep1-Inp: con
+  AMG-Rep1-Inp: con
+  ATN-Rep1-Inp: con
+  ASI-Rep2-IP: ip
+  ACL-Rep2-IP: ip
+  ACA-Rep2-IP: ip
+  ADU-Rep2-IP: ip
+  AIC-Rep2-IP: ip
+  AIM-Rep2-IP: ip
+  AJE-Rep2-IP: ip
+  AST-Rep2-IP: ip
+  ASI-Rep2-Inp: con
+  ACL-Rep2-Inp: con
+  ACA-Rep2-Inp: con
+  ADU-Rep2-Inp: con
+  AIC-Rep2-Inp: con
+  AIM-Rep2-Inp: con
+  AJE-Rep2-Inp: con
+  AST-Rep2-Inp: con
+  ACS-Rep2-IP: ip
+  ASO-Rep2-IP: ip
+  ATG-Rep2-IP: ip
+  AAC-Rep2-IP: ip
+  ASG-Rep2-IP: ip
+  AAP-Rep2-IP: ip
+  AMG-Rep2-IP: ip
+  ATN-Rep2-IP: ip
+  ACS-Rep2-Inp: con
+  ASO-Rep2-Inp: con
+  ATG-Rep2-Inp: con
+  AAC-Rep2-Inp: con
+  ASG-Rep2-Inp: con
+  AAP-Rep2-Inp: con
+  AMG-Rep2-Inp: con
+  ATN-Rep2-Inp: con
+  ATY-Rep1-IP: ip
+  APG-Rep1-IP: ip
+  AFL-Rep1-IP: ip
+  ATY-Rep1-Inp: con
+  APG-Rep1-Inp: con
+  AFL-Rep1-Inp: con
+  ATY-Rep2-IP: ip
+  APG-Rep2-IP: ip
+  ATY-Rep2-Inp: con
+  APG-Rep2-Inp: con
+
+sample_comparison:
+  [
+  [FBR-Rep1-IP,FBR-Rep1-Inp],
+  [FSC-Rep1-IP,FSC-Rep1-Inp],
+  [FHE-Rep1-IP,FHE-Rep1-Inp],
+  [FLU-Rep1-IP,FLU-Rep1-Inp],
+  [FLI-Rep1-IP,FLI-Rep1-Inp],
+  [FSP-Rep1-IP,FSP-Rep1-Inp],
+  [FAG-Rep1-IP,FAG-Rep1-Inp],
+  [FKI-Rep1-IP,FKI-Rep1-Inp],
+  [FTH-Rep1-IP,FTH-Rep1-Inp],
+  [FWH-Rep1-IP,FWH-Rep1-Inp],
+  [ABR-Rep1-IP,ABR-Rep1-Inp],
+  [ASC-Rep1-IP,ASC-Rep1-Inp],
+  [AHE-Rep1-IP,AHE-Rep1-Inp],
+  [ALU-Rep1-IP,ALU-Rep1-Inp],
+  [ALI-Rep1-IP,ALI-Rep1-Inp],
+  [ASP-Rep1-IP,ASP-Rep1-Inp],
+  [AAG-Rep1-IP,AAG-Rep1-Inp],
+  [AKI-Rep1-IP,AKI-Rep1-Inp],
+  [AEP-Rep1-IP,AEP-Rep1-Inp],
+  [ATE-Rep1-IP,ATE-Rep1-Inp],
+  [APR-Rep1-IP,APR-Rep1-Inp],
+  [AUT-Rep1-IP,AUT-Rep1-Inp],
+  [AOV-Rep1-IP,AOV-Rep1-Inp],
+  [APL-Rep1-IP,APL-Rep1-Inp],
+  [AAO-Rep1-IP,AAO-Rep1-Inp],
+  [ALN-Rep1-IP,ALN-Rep1-Inp],
+  [ALE-Rep1-IP,ALE-Rep1-Inp],
+  [AAD-Rep1-IP,AAD-Rep1-Inp],
+  [AAS-Rep1-IP,AAS-Rep1-Inp],
+  [ALV-Rep1-IP,ALV-Rep1-Inp],
+  [ARV-Rep1-IP,ARV-Rep1-Inp],
+  [APE-Rep1-IP,APE-Rep1-Inp],
+  [ACE-Rep1-IP,ACE-Rep1-Inp],
+  [ACN-Rep1-IP,ACN-Rep1-Inp],
+  [ACO-Rep1-IP,ACO-Rep1-Inp],
+  [ACC-Rep1-IP,ACC-Rep1-Inp],
+  [AHI-Rep1-IP,AHI-Rep1-Inp],
+  [ATA-Rep1-IP,ATA-Rep1-Inp],
+  [AMO-Rep1-IP,AMO-Rep1-Inp],
+  [APO-Rep1-IP,APO-Rep1-Inp],
+  [ATL-Rep1-IP,ATL-Rep1-Inp],
+  [ATR-Rep1-IP,ATR-Rep1-Inp],
+  [AES-Rep1-IP,AES-Rep1-Inp],
+  [ASM-Rep1-IP,ASM-Rep1-Inp],
+  [AAT-Rep1-IP,AAT-Rep1-Inp],
+  [ABL-Rep1-IP,ABL-Rep1-Inp],
+  [APA-Rep1-IP,APA-Rep1-Inp],
+  [FBR-Rep2-IP,FBR-Rep2-Inp],
+  [FSC-Rep2-IP,FSC-Rep2-Inp],
+  [FHE-Rep2-IP,FHE-Rep2-Inp],
+  [FLU-Rep2-IP,FLU-Rep2-Inp],
+  [FLI-Rep2-IP,FLI-Rep2-Inp],
+  [FSP-Rep2-IP,FSP-Rep2-Inp],
+  [FAG-Rep2-IP,FAG-Rep2-Inp],
+  [FKI-Rep2-IP,FKI-Rep2-Inp],
+  [FTH-Rep2-IP,FTH-Rep2-Inp],
+  [FWH-Rep2-IP,FWH-Rep2-Inp],
+  [ABR-Rep2-IP,ABR-Rep2-Inp],
+  [ASC-Rep2-IP,ASC-Rep2-Inp],
+  [AHE-Rep2-IP,AHE-Rep2-Inp],
+  [ALU-Rep2-IP,ALU-Rep2-Inp],
+  [ALI-Rep2-IP,ALI-Rep2-Inp],
+  [ASP-Rep2-IP,ASP-Rep2-Inp],
+  [AAG-Rep2-IP,AAG-Rep2-Inp],
+  [AKI-Rep2-IP,AKI-Rep2-Inp],
+  [AEP-Rep2-IP,AEP-Rep2-Inp],
+  [ATE-Rep2-IP,ATE-Rep2-Inp],
+  [APR-Rep2-IP,APR-Rep2-Inp],
+  [AUT-Rep2-IP,AUT-Rep2-Inp],
+  [AOV-Rep2-IP,AOV-Rep2-Inp],
+  [APL-Rep2-IP,APL-Rep2-Inp],
+  [AAO-Rep2-IP,AAO-Rep2-Inp],
+  [ALN-Rep2-IP,ALN-Rep2-Inp],
+  [ALE-Rep2-IP,ALE-Rep2-Inp],
+  [AAD-Rep2-IP,AAD-Rep2-Inp],
+  [AAS-Rep2-IP,AAS-Rep2-Inp],
+  [ALV-Rep2-IP,ALV-Rep2-Inp],
+  [ARV-Rep2-IP,ARV-Rep2-Inp],
+  [APE-Rep2-IP,APE-Rep2-Inp],
+  [ACE-Rep2-IP,ACE-Rep2-Inp],
+  [ACN-Rep2-IP,ACN-Rep2-Inp],
+  [ACO-Rep2-IP,ACO-Rep2-Inp],
+  [ACC-Rep2-IP,ACC-Rep2-Inp],
+  [AHI-Rep2-IP,AHI-Rep2-Inp],
+  [ATA-Rep2-IP,ATA-Rep2-Inp],
+  [AMO-Rep2-IP,AMO-Rep2-Inp],
+  [AFL-Rep2-IP,AFL-Rep2-Inp],
+  [APO-Rep2-IP,APO-Rep2-Inp],
+  [ATL-Rep2-IP,ATL-Rep2-Inp],
+  [ATR-Rep2-IP,ATR-Rep2-Inp],
+  [AES-Rep2-IP,AES-Rep2-Inp],
+  [ASM-Rep2-IP,ASM-Rep2-Inp],
+  [AAT-Rep2-IP,AAT-Rep2-Inp],
+  [ABL-Rep2-IP,ABL-Rep2-Inp],
+  [APA-Rep2-IP,APA-Rep2-Inp],
+  [ASI-Rep1-IP,ASI-Rep1-Inp],
+  [ACL-Rep1-IP,ACL-Rep1-Inp],
+  [ACA-Rep1-IP,ACA-Rep1-Inp],
+  [ADU-Rep1-IP,ADU-Rep1-Inp],
+  [AIC-Rep1-IP,AIC-Rep1-Inp],
+  [AIM-Rep1-IP,AIM-Rep1-Inp],
+  [AJE-Rep1-IP,AJE-Rep1-Inp],
+  [AST-Rep1-IP,AST-Rep1-Inp],
+  [ACS-Rep1-IP,ACS-Rep1-Inp],
+  [ASO-Rep1-IP,ASO-Rep1-Inp],
+  [ATG-Rep1-IP,ATG-Rep1-Inp],
+  [AAC-Rep1-IP,AAC-Rep1-Inp],
+  [ASG-Rep1-IP,ASG-Rep1-Inp],
+  [AAP-Rep1-IP,AAP-Rep1-Inp],
+  [AMG-Rep1-IP,AMG-Rep1-Inp],
+  [ATN-Rep1-IP,ATN-Rep1-Inp],
+  [ASI-Rep2-IP,ASI-Rep2-Inp],
+  [ACL-Rep2-IP,ACL-Rep2-Inp],
+  [ACA-Rep2-IP,ACA-Rep2-Inp],
+  [ADU-Rep2-IP,ADU-Rep2-Inp],
+  [AIC-Rep2-IP,AIC-Rep2-Inp],
+  [AIM-Rep2-IP,AIM-Rep2-Inp],
+  [AJE-Rep2-IP,AJE-Rep2-Inp],
+  [AST-Rep2-IP,AST-Rep2-Inp],
+  [ACS-Rep2-IP,ACS-Rep2-Inp],
+  [ASO-Rep2-IP,ASO-Rep2-Inp],
+  [ATG-Rep2-IP,ATG-Rep2-Inp],
+  [AAC-Rep2-IP,AAC-Rep2-Inp],
+  [ASG-Rep2-IP,ASG-Rep2-Inp],
+  [AAP-Rep2-IP,AAP-Rep2-Inp],
+  [AMG-Rep2-IP,AMG-Rep2-Inp],
+  [ATN-Rep2-IP,ATN-Rep2-Inp],
+  [ATY-Rep1-IP,ATY-Rep1-Inp],
+  [APG-Rep1-IP,APG-Rep1-Inp],
+  [AFL-Rep1-IP,AFL-Rep1-Inp],
+  [ATY-Rep2-IP,ATY-Rep2-Inp],
+  [APG-Rep2-IP,APG-Rep2-Inp],
+  ]
+
+deg_group:
+  HE_dev:
+   [[FHE-Rep1-Inp, FHE-Rep2-Inp], [AHE-Rep1-Inp, AHE-Rep2-Inp]]
+  AG_dev:
+   [[FAG-Rep1-Inp, FAG-Rep2-Inp], [AAG-Rep1-Inp, AAG-Rep2-Inp]]
+  SP_dev:
+   [[FSP-Rep1-Inp, FSP-Rep2-Inp], [ASP-Rep1-Inp, ASP-Rep2-Inp]]
+  SC_dev:
+   [[FSC-Rep1-Inp, FSC-Rep2-Inp], [ASC-Rep1-Inp, ASC-Rep2-Inp]]
+  KI_dev:
+   [[FKI-Rep1-Inp, FKI-Rep2-Inp], [AKI-Rep1-Inp, AKI-Rep2-Inp]]
+  LI_dev:
+   [[FLI-Rep1-Inp, FLI-Rep2-Inp], [ALI-Rep1-Inp, ALI-Rep2-Inp]]
+  BR_dev:
+   [[FBR-Rep1-Inp, FBR-Rep2-Inp], [ABR-Rep1-Inp, ABR-Rep2-Inp]]
+  LU_dev:
+   [[FLU-Rep1-Inp, FLU-Rep2-Inp], [ALU-Rep1-Inp, ALU-Rep2-Inp]]
